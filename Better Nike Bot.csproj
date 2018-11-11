@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{FCACD426-D36D-481E-960A-2112C612B847}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Better Nike Bot</RootNamespace>
+    <AssemblyName>Better Nike Bot</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Better Nike Bot.ico</ApplicationIcon>
+    <StartupObject>Better_Nike_Bot.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutomaticUpdater">
+      <HintPath>..\..\..\{app}\AutomaticUpdater.dll</HintPath>
+    </Reference>
+    <Reference Include="BetterSplitButton">
+      <HintPath>..\..\..\{app}\BetterSplitButton.dll</HintPath>
+    </Reference>
+    <Reference Include="CsQuery">
+      <HintPath>..\..\..\{app}\CsQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetBrowser">
+      <HintPath>..\..\..\{app}\DotNetBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="IMLokesh">
+      <HintPath>..\..\..\{app}\IMLokesh.dll</HintPath>
+    </Reference>
+    <Reference Include="IMLokesh.Http">
+      <HintPath>..\..\..\{app}\IMLokesh.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="IMLokesh.HttpUtility">
+      <HintPath>..\..\..\{app}\IMLokesh.HttpUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Jint">
+      <HintPath>..\..\TheKickStation\Jint.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\{app}\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectListView">
+      <HintPath>..\..\..\{app}\ObjectListView.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="Better_Nike_Bot\Account.cs" />
+    <Compile Include="Better_Nike_Bot\AccountDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\AccountDetailsForm.Designer.cs">
+      <DependentUpon>AccountDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\AddedProduct.cs" />
+    <Compile Include="Better_Nike_Bot\AddedProductsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\AddedProductsForm.Designer.cs">
+      <DependentUpon>AddedProductsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\AddToCart.cs" />
+    <Compile Include="Better_Nike_Bot\AdvancedSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\AdvancedSettingsForm.Designer.cs">
+      <DependentUpon>AdvancedSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\AtcItem.cs" />
+    <Compile Include="Better_Nike_Bot\Browser\Browser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\Browser\Browser.Designer.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\Browser\ProxyAuthDelegate.cs" />
+    <Compile Include="Better_Nike_Bot\CheckoutInfo.cs" />
+    <Compile Include="Better_Nike_Bot\CheckoutProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\CheckoutProfile.Designer.cs">
+      <DependentUpon>CheckoutProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\CreateAccounts.cs" />
+    <Compile Include="Better_Nike_Bot\CreateAccountsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\CreateAccountsForm.Designer.cs">
+      <DependentUpon>CreateAccountsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\CreditCardProfile.cs" />
+    <Compile Include="Better_Nike_Bot\CreditCardProfilesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\CreditCardProfilesForm.Designer.cs">
+      <DependentUpon>CreditCardProfilesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\DataForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\DataForm1.Designer.cs">
+      <DependentUpon>DataForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\LinkScheduler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\LinkScheduler.Designer.cs">
+      <DependentUpon>LinkScheduler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\Logger.cs" />
+    <Compile Include="Better_Nike_Bot\MonitorLink.cs" />
+    <Compile Include="Better_Nike_Bot\Names.cs" />
+    <Compile Include="Better_Nike_Bot\NikeToken.cs" />
+    <Compile Include="Better_Nike_Bot\NikeUrls.cs" />
+    <Compile Include="Better_Nike_Bot\NikeWaitIntervals.cs" />
+    <Compile Include="Better_Nike_Bot\NotificationExtensions.cs" />
+    <Compile Include="Better_Nike_Bot\NotificationService.cs" />
+    <Compile Include="Better_Nike_Bot\NotificationSettings.cs" />
+    <Compile Include="Better_Nike_Bot\ProductDetails.cs" />
+    <Compile Include="Better_Nike_Bot\Program.cs" />
+    <Compile Include="Better_Nike_Bot\Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\ScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\ScheduleForm.Designer.cs">
+      <DependentUpon>ScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\ShouldStop.cs" />
+    <Compile Include="Better_Nike_Bot\SiteType.cs" />
+    <Compile Include="Better_Nike_Bot\SizeDescription.cs" />
+    <Compile Include="Better_Nike_Bot\SnkrsCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\SnkrsCalendar.Designer.cs">
+      <DependentUpon>SnkrsCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Better_Nike_Bot\SnkrsItem.cs" />
+    <Compile Include="Better_Nike_Bot\StringExtensions.cs" />
+    <Compile Include="Better_Nike_Bot\Utilities\LoginBrowser.cs" />
+    <Compile Include="Better_Nike_Bot\Utilities\Resource.cs" />
+    <Compile Include="Better_Nike_Bot\Utilities\WebUtilities.cs" />
+    <Compile Include="Better_Nike_Bot\WebSnkrs.cs" />
+    <Compile Include="ns0\AssemblyInfoAttribute.cs" />
+    <Compile Include="ns0\Class0.cs" />
+    <Compile Include="ns0\Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="wyDay\TurboActivate\COMException.cs" />
+    <Compile Include="wyDay\TurboActivate\DateTimeException.cs" />
+    <Compile Include="wyDay\TurboActivate\ExtraDataTooLongException.cs" />
+    <Compile Include="wyDay\TurboActivate\GUIDMismatchException.cs" />
+    <Compile Include="wyDay\TurboActivate\InternetException.cs" />
+    <Compile Include="wyDay\TurboActivate\InvalidArgsException.cs" />
+    <Compile Include="wyDay\TurboActivate\InvalidFlagsException.cs" />
+    <Compile Include="wyDay\TurboActivate\InvalidProductKeyException.cs" />
+    <Compile Include="wyDay\TurboActivate\IsGenuineResult.cs" />
+    <Compile Include="wyDay\TurboActivate\NoMoreDeactivationsException.cs" />
+    <Compile Include="wyDay\TurboActivate\NotActivatedException.cs" />
+    <Compile Include="wyDay\TurboActivate\PermissionException.cs" />
+    <Compile Include="wyDay\TurboActivate\PkeyMaxUsedException.cs" />
+    <Compile Include="wyDay\TurboActivate\PkeyRevokedException.cs" />
+    <Compile Include="wyDay\TurboActivate\ProductDetailsException.cs" />
+    <Compile Include="wyDay\TurboActivate\TrialExtExpiredException.cs" />
+    <Compile Include="wyDay\TurboActivate\TrialExtUsedException.cs" />
+    <Compile Include="wyDay\TurboActivate\TurboActivate.cs" />
+    <Compile Include="wyDay\TurboActivate\TurboActivateException.cs" />
+    <Compile Include="wyDay\TurboActivate\TurboFloatKeyException.cs" />
+    <Compile Include="wyDay\TurboActivate\VirtualMachineException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="-B22aTFKDfiGR9Kw==" />
+    <EmbeddedResource Include="-fgBTY7OsD0Wbr+Mrw==" />
+    <EmbeddedResource Include="6nsfXujFMxqizAWKSKrR6w==" />
+    <EmbeddedResource Include="Better_Nike_Bot\AccountDetailsForm.resx">
+      <DependentUpon>AccountDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Better_Nike_Bot\AddedProductsForm.resx">
+      <DependentUpon>AddedProductsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Better_Nike_Bot\AdvancedSettingsForm.resx">
+      <DependentUpon>AdvancedSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Better_Nike_Bot\Browser\Browser.resx">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Better_Nike_Bot\CheckoutProfile.resx">
+      <DependentUpon>CheckoutProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Better_Nike_Bot\CreateAccountsForm.resx">
+      <DependentUpon>CreateAccountsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Better_Nike_Bot\CreditCardProfilesForm.resx">
+      <DependentUpon>CreditCardProfilesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Better_Nike_Bot\DataForm1.resx">
+      <DependentUpon>DataForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Better_Nike_Bot\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Better_Nike_Bot\LinkScheduler.resx">
+      <DependentUpon>LinkScheduler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Better_Nike_Bot\Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Better_Nike_Bot\ScheduleForm.resx">
+      <DependentUpon>ScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Better_Nike_Bot\Scripts\Login\Bmsync.html" />
+    <EmbeddedResource Include="Better_Nike_Bot\Scripts\Login\Run.js" />
+    <EmbeddedResource Include="Better_Nike_Bot\SnkrsCalendar.resx">
+      <DependentUpon>SnkrsCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KFTW3ow8luhwHvef3kpEFw==" />
+    <EmbeddedResource Include="nDIuuR0niagHiaanUjETZA==" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="Better_Nike_Bot\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
